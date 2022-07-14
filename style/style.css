@@ -424,6 +424,7 @@ i{
     width: 100%;
     padding-top: 40px;
     color: #fff;
+
     /* overflow: hidden; */
 }
 .footer-content{
@@ -484,7 +485,7 @@ i{
 .footer-bottom{
     background: #000;
     width: 100%;
-    /* width: 100vw; */
+    padding: 0px 3rem;
     text-align: center;
     /* overflow: hidden; */
     display: flex;
@@ -559,7 +560,38 @@ i{
 
 
 
+#myBtn{
+    display: block;
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--PINK);
+    color: #dddde3;
+    cursor: pointer;
+    border-radius: 1rem;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#myBtn h1{
+    color: #cfd2d6;
+    z-index: 199;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+i{
+    color: #cfd2d6;
+    z-index: 199;
+   
+}
 
 
 
@@ -638,6 +670,7 @@ i{
         display: none;
 
      }
+     
 
 
 
