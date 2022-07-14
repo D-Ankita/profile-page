@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    --BACKGROUND: #2e3138;
+    --OFFWHITE: #dddde3;
+    --WHITE: #f2f7f7;
+    --DARK: #162224;
+    --PINK: #fa043d;
+    --YELLOW: #ffbb00;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--BACKGROUND);
+    /* padding: 0 2rem; */
+    --margin-top: 8rem
+}
+
+main {
+    padding: 0rem 5rem;
+}
+
+p span .bold{
+    margin-top: 3rem;
+}
+
+.top-nav {
+    overflow: hidden;
+    background-color: var(--BACKGROUND);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem ;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cta{
+    background-color: #fa043d;
+    /* border-style: #fa043d solid; */
+    color: #dddde3;
+    border: 0.2rem solid #fa043d;
+    padding: 1rem;
+    background-color: #fa043d;
+    /* border-style: none; */
+    border-radius: 2.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #dddde3;
+    padding-right:1rem ;
+}
+i{
+    padding-right: 0.6rem;
+  
+}
+
+.cta:hover{
+    background: transparent;
+    cursor: pointer;
+}
+  .top-nav a {
+    
+    float: left;
+    /* display: block; */
+    color: #dddde3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+
+  .top-nav a.active {
+    color: #f2f7f7;
+    text-decoration: underline #f2f7f7 dotted 1px;
+    text-underline-offset: 5px;
+    /* border-bottom: #f2f7f7 dotted; */
+  }
+  
+  .top-nav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 690px) {
+    .top-nav .menus 
+    {
+        display: none;
+    }
+
+
+    .top-nav .download-button
+    {
+        display: none;
+    }
+
+
+    .top-nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+
+
+
+
+  /* --------------------------------------------- */
+
+
+.hero-bg {
+    min-height: calc(92vh - 46px);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* padding:; */
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.hero-img {
+    height: 90%;
+    align-self: end;
+
+}
+
+.hero-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-text {
+    text-align: left;
+    width: 45%;
+    text-align: left;
+    color: var(--OFFWHITE);
+    font-size: 2rem;
+}
+
+.hero-text p {
+    font-size: 1.6rem;
+}
+
+.hero-text h1 {
+    color: var(--WHITE);
+    text-shadow: var(--PINK);
+    text-shadow: var(--OFFWHITE) 1px 1px 2px;
+    padding: 1px;
+}
+
+
+.hero-text h3 span {
+    color: var(--PINK);
+}
+
+.hero-text h3 .bold {
+    background-color: var(--PINK);
+    color: var(--OFFWHITE);
+    padding: 0.5rem;
+    border-radius: 5px;
+    /* border: 1rem solid black; */
+    /* margin:1px ; */
+}
+
+.find-me-links {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem 0rem;
+}
+
+.hero-text .find-me-links .find-me-link i {
+    color: var(--WHITE);
+    margin: 2rem 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECOND DIV*/
+
+.container{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+.container .card{
+    width:25rem ;
+    height: 19rem;
+    background-color: var(--BACKGROUND);
+    margin: 20px;
+    box-shadow: 0px 15px 35px var(--DARK);
+    border-radius: 15px;
+    display: flex;
+    padding: 1rem;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    backdrop-filter: blur(10px);
+}
+
+
+
+.container .card .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+
+
+}
+.service-logos{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 1rem 0.5rem 1rem;
+    border:2px dotted var(--PINK);
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    padding: 0.3rem;
+    /* background-color: var(--PINK); */
+    align-items: center;
+
+}
+
+.card .fa-solid, .fas {
+    /* color:var(--OFFWHITE); */
+    color:var(--PINK);
+    /* position: relative; */
+    /* align-self: center; */
+}
+
+
+
+/* To bring short length content in center */
+.container .card .content .contentBx{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .content .contentBx h3{
+    color: var(--WHITE);
+    text-transform: uppercase;
+    /* letter-spacing: 0.2rem; */
+    font-weight: bolder;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0.9rem 0px ;
+    line-height: 1.6rem;
+}
+
+.container .card .content .contentBx p{
+    font-size: 0.8rem;
+    font-weight: lighter;
+    text-transform: initial;
+    color: var(--OFFWHITE);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THIRD DIV */
+
+
+.div-service1 {
+    height: calc(98vh - 46px);
+    background-color: rgb(255, 0, 0);
+}
+
+.div-service2 {
+    height: calc(98vh - 46px);
+    background-color: #878787;
+}
+
+.div-service3 {
+    height: calc(98vh - 46px);
+    background-color: rgb(0, 110, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 690px) {
+    main{
+        padding: 0rem 2.5rem;
+    }
+    .hero-text {
+        font-size: 1.5rem;
+    }
+
+    .hero-bg {
+        height: unset;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-bg .hero-text {
+        width: 95%;
+    }
+
+    .hero-bg .hero-img {
+        height: 23rem;
+        align-self: center;
+        background-color: #162224;
+        margin-top: 1rem;
+        border-radius: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.4rem;
+    }
+
+    .div-service {
+        height: unset;
+        /* background-color: yellow; */
+    }
+
+    .div-service .hero-text {
+        width: 95%;
+    }
+
+    .container .card{
+        width:35rem ;
+        height: 20rem;
+        margin: 10px;
+    }
+
+
+
+}
+
+
